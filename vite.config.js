@@ -8,4 +8,7 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    build: {
+        outDir: 'public/build', // Ini harus sama dengan yang kita atur di Vercel tadi
+    }
 });
