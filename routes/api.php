@@ -10,13 +10,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/coba', [App\Http\Controllers\Api\CobaController::class, 'index']);
-Route::get('/coba/{id}', [App\Http\Controllers\Api\CobaController::class, 'show']);
-Route::post('coba', [App\Http\Controllers\Api\CobaController::class, 'store']);
-Route::put('coba/{id}', [App\Http\Controllers\Api\CobaController::class, 'update']);
-Route::delete('coba/{id}', [App\Http\Controllers\Api\CobaController::class, 'destroy']);
-
-
 Route::get('/users', [UserController::class, 'index']);
 Route::get('/users/{id}', [UserController::class, 'show']);
 Route::post('users', [UserController::class, 'store']);
